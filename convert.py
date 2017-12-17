@@ -4,7 +4,7 @@ import numpy
 import imageio
 import glob, os
 
-paths = glob.glob("*.RW2")
+paths = sorted(glob.glob("*.RW2"))
 for index, item in enumerate(paths):
   raw = rawpy.imread(paths[index])
   rgb = raw.postprocess()
@@ -24,7 +24,7 @@ for infile in glob.glob("*.tiff"):
 for index, item in enumerate(paths):
   os.rename(item, str(index) + ".RW2")
   
-thumb = glob.glob("th/" + "*.jpg")
+thumb = sorted(glob.glob("th/" + "*.jpg"))
 for index, item in enumerate(thumb):
   os.rename(item, "th/" + str(index) + ".jpg")
 
