@@ -21,12 +21,12 @@ for infile in glob.glob("*.tiff"):
   im.thumbnail(size)
   im.save(dirpath + "/th/" + file + ".jpg")
 
-# for index, item in enumerate(paths):
-#   os.rename(item, str(index) + ".RW2")
+for index, item in enumerate(paths):
+  os.rename(item, str(index) + ".RW2")
   
-# thumb = glob.glob("th/" + "*.jpg")
-# for index, item in enumerate(thumb):
-#   os.rename(item, "th/" + str(index) + ".jpg")
+thumb = glob.glob("th/" + "*.jpg")
+for index, item in enumerate(thumb):
+  os.rename(item, "th/" + str(index) + ".jpg")
 
 tiffs = glob.glob("*.tiff")
 for index, item in enumerate(tiffs):
