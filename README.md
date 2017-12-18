@@ -8,5 +8,5 @@
   Run ```optimize.py``` in directory with your jpg files. <br/> It'll create ```optimized``` folder with optimized files.
 
 ### To crop all jpg files in directory to square:
-  Based on [Crop Images with PIL/Pillow](http://matthiaseisen.com/pp/patterns/p0202/)
+  Based on [Crop Images with PIL/Pillow](http://matthiaseisen.com/pp/patterns/p0202/) <br/>
   Run ```crop.py``` in directory with your jpg files. <br/> It'll create ```cropped``` folder with cropped files.
