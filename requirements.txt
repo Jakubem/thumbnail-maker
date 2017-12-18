@@ -1,0 +1,4 @@
+rawpy==0.10.1
+imageio==2.2.0
+Pillow==4.3.0
+numpy==1.14.0rc1
