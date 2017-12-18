@@ -1,4 +1,4 @@
-## Simple script for creating jpg thumbnails from raw camera files
+## Simple scripts to automate my photo editing workflow
 
 ### To convert raw to jpg:
   Run ```convert.py``` in directory with your raw files. <br/> It'll create ```th``` folder with resized jpg's <br/>
