@@ -4,7 +4,7 @@ import numpy
 import imageio
 import glob, os
 
-file_ext = ".NEF"
+file_ext = ".RW2"
 
 # get and sort each raw file from root directory as list
 paths = sorted(glob.glob("*"+file_ext))

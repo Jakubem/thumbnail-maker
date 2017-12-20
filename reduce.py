@@ -6,7 +6,7 @@ import glob, os
 
 dirpath = os.getcwd()
 
-file_ext = ".NEF"
+file_ext = ".RW2"
 
 src = sorted(glob.glob("*"+file_ext))
 
