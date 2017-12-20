@@ -4,9 +4,10 @@ import numpy
 import imageio
 import glob, os
 
+file_ext = ".NEF"
 
 # get and sort each raw file from root directory as list
-paths = sorted(glob.glob("*.RW2"))
+paths = sorted(glob.glob("*"+file_ext))
 
 # loop trough paths list and create tiff from each raw file
 for index, item in enumerate(paths):
@@ -33,14 +34,14 @@ for infile in glob.glob("*.tiff"):
 
 # rename each file in root directory
 for index, item in enumerate(paths):
-  os.rename(item, str(index) + ".RW2")
+  os.rename(item, str(index + 1) + file_ext)
 
 # get and sort each thumbnail from th directory as list
 thumb = sorted(glob.glob("th/" + "*.jpg"))
 
 # rename each file in th directory
 for index, item in enumerate(thumb):
-  os.rename(item, "th/" + str(index) + ".jpg")
+  os.rename(item, "th/" + str(index + 1) + ".jpg")
 
 # remove all tiff files form directory
 tiffs = glob.glob("*.tiff")
