@@ -1,6 +1,6 @@
 ## Simple scripts to automate my photo editing workflow
 
-### Run `pip install -r requirements.txt` to install all dependencies.
+Run `pip install -r requirements.txt` to install all dependencies.
 
 ### To convert raw to jpg:
   Run ```convert.py``` in directory with your raw files. <br/> It'll create ```th``` folder with resized jpg's <br/>
